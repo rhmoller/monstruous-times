@@ -1,0 +1,6 @@
+dist
+
+.idea
+*.iml
+
+node_modules

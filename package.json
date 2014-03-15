@@ -1,0 +1,18 @@
+{
+  "name": "monstruous times",
+  "version": "1.0.0",
+  "description": "My entry for the 7 day roguelike challenge 2014",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rene Hangstrup Moeller",
+  "license": "The MIT License",
+  "devDependencies": {
+    "gulp": "~3.5.5",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-concat": "~2.1.7",
+    "gulp-jshint": "~1.5.0",
+  }
+}
