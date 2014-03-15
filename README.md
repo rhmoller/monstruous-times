@@ -6,11 +6,11 @@ My entry for the 7 day roguelike challenge 2014
 ![](http://raw.github.com/rhmoller/monstruous-times/master/rhmoller-7drl.png)
 
 
-You need node and npm install and run it:
+You need node and npm to install and run it:
 
-cd monstruous-times
-npm install
-gulp
+    cd monstruous-times
+    npm install
+    gulp
 
 now point your browser at http://localhost:9000
 
