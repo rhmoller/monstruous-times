@@ -14,6 +14,10 @@ You need node and npm to install and run it:
 
 now point your browser at http://localhost:9000
 
+or play it online here
+
+http://www.giddyplanet.com/stuff/monstruoustimes/
+
 Credits:
 Uses the BBC Micro 1 font from http://damieng.com/blog/2011/02/20/typography-in-8-bits-system-fonts
 
