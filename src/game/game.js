@@ -208,10 +208,12 @@ function paintInventory() {
             ctx.fillRect(100, 50 + 38 + inventoryLine * lineh, 440, lineh);
         }
 
-        var tx = player.items[itemName].amount < 10 ? 48 : 32;
-        font.draw(ctx, player.items[itemName].amount + "x", 100 + tx, 50 + 48 + i * lineh);
+        var amountTxt = player.items[itemName].amount + "x";
+        var tx = 16 + (4 - amountTxt.length) * 16;
+
+        font.draw(ctx, amountTxt, 100 + tx, 50 + 48 + i * lineh);
         font.draw(ctx, itemName, 100 + 16 * 8, 50 + 48 + i * lineh);
-        tileset.drawPx(player.items[itemName].tile, 106 + 16 * 5, 40 + 48 + i * lineh, 2);
+        tileset.drawPx(player.items[itemName].tile, 108 + 16 * 5, 40 + 48 + i * lineh, 2);
 
         i++;
     }
@@ -810,6 +812,7 @@ function useItem() {
                     notice("You feel much stronger");
                     player.stamina += 3;
                     player.health += 3;
+                    used = true;
                     if (player.health > player.stamina) {
                         player.health = player.stamina;
                     }
@@ -905,6 +908,7 @@ function startGame() {
 
             case KEY_ESC:
                 inventoryMode = false;
+                spellbookMode = false;
                 mapMode = false;
                 break;
         }
